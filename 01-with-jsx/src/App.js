@@ -1,15 +1,14 @@
 import React from "react";
 
-const Header = (props) => <h1>JSX Expression text</h1>;
+import Header from "./components/Header";
+import Button from "./components/Button";
+import "./App.css";
 
-const agree = false;
-
-const App = (props) => {
-  if (agree) {
-    return <h1>Agree</h1>;
-  } else {
-    return <h1>Not Agree</h1>;
-  }
-};
+const App = (props) => (
+  <div className="App">
+    <Header />
+    <Button />
+  </div>
+);
 
 export default App;
