@@ -1,9 +1,9 @@
 import React from "react";
 
-const handleClick = () => console.log(1);
+const FunctionalButton = (props) => {
+  const handleClick = () => console.log(1);
 
-const FunctionalButton = (props) => (
-  <button onClick={handleClick}>Functional button</button>
-);
+  return <button onClick={handleClick}>Functional button</button>;
+};
 
 export default FunctionalButton;
