@@ -2,6 +2,7 @@ import React, { Component } from "react";
 
 import FunctionalButton from "./FunctionalButton";
 import ClassButton from "./ClassButton";
+import "./App.css";
 
 class App extends Component {
   state = {
@@ -16,7 +17,7 @@ class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="App">
         <FunctionalButton
           times={this.state.times}
           onButtonClick={this.handleClick}
