@@ -8,8 +8,8 @@ class App extends Component {
     times: 0,
   };
 
-  handleClick = () => {
-    console.log("Clicked inside App");
+  handleClick = (buttonName) => () => {
+    console.log("Clicked inside App, button was", buttonName);
 
     this.setState({ times: this.state.times + 1 });
   };

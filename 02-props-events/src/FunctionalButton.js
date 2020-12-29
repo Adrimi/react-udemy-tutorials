@@ -1,9 +1,9 @@
 import React from "react";
 
-const FunctionalButton = (props) => {
+const FunctionalButton = ({ onButtonClick, times }) => {
   return (
-    <button onClick={props.onButtonClick}>
-      Functional, times: {props.times}
+    <button onClick={onButtonClick("functional")}>
+      Functional, times: {times}
     </button>
   );
 };

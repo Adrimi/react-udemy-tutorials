@@ -2,9 +2,11 @@ import React, { Component } from "react";
 
 class ClassButton extends Component {
   render() {
+    const { onButtonClick, times } = this.props;
+
     return (
-      <button onClick={this.props.onButtonClick}>
-        Class Button, times: {this.props.times}
+      <button onClick={onButtonClick("class")}>
+        Class Button, times: {times}
       </button>
     );
   }
