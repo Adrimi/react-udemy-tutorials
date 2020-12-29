@@ -1,9 +1,11 @@
 import React from "react";
 
 const FunctionalButton = (props) => {
-  const handleClick = () => console.log(1);
-
-  return <button onClick={handleClick}>Functional button</button>;
+  return (
+    <button onClick={props.onButtonClick}>
+      Functional, times: {props.times}
+    </button>
+  );
 };
 
 export default FunctionalButton;
