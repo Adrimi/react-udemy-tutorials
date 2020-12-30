@@ -6,12 +6,20 @@ class App extends Component {
     count: 0,
   };
 
+  handleIncrease = () => {
+    this.setState({ count: this.state.count + 1 });
+  };
+
+  handleDecrease = () => {
+    this.setState({ count: this.state.count - 1 });
+  };
+
   render() {
     return (
       <div className="App">
         <h1>Current count: {this.state.count}</h1>
-        <button>Increase</button>
-        <button>Decrease</button>
+        <button onClick={this.handleIncrease}>Increase</button>
+        <button onClick={this.handleDecrease}>Decrease</button>
       </div>
     );
   }
