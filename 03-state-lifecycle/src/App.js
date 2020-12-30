@@ -1,28 +1,7 @@
-import React, { Component } from "react";
-import "./App.css";
+import React from "react";
 
-class App extends Component {
-  state = {
-    count: 0,
-  };
+import Counter from "./Counter";
 
-  handleIncrease = () => {
-    this.setState({ count: this.state.count + 1 });
-  };
-
-  handleDecrease = () => {
-    this.setState({ count: this.state.count - 1 });
-  };
-
-  render() {
-    return (
-      <div className="App">
-        <h1>Current count: {this.state.count}</h1>
-        <button onClick={this.handleIncrease}>Increase</button>
-        <button onClick={this.handleDecrease}>Decrease</button>
-      </div>
-    );
-  }
-}
+const App = () => <Counter />;
 
 export default App;
